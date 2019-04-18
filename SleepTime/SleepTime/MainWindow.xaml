@@ -1,0 +1,97 @@
+﻿<Window x:Class="SleepTime.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SleepTime"
+        mc:Ignorable="d"
+        Title="Sleep Time" Height="550" Width="850" Background="SkyBlue"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="IntoSleep_lb"
+               Height="30"
+               Content="Time vào giấc ngủ:"
+               Margin="50,40,612,399"
+               Background="#FFC7E4EE"
+               Foreground="Red"
+               FontWeight="Bold"/>
+        <Label x:Name="AsleepTime_lb"
+               Height="30" 
+               Content="Time bắt đầu ngủ:"
+               Margin="50,112,612,327"
+               Background="#FFC7E4EE"
+               Foreground="Red"
+               FontWeight="Bold"/>
+        <Label x:Name="AwakeTime_lb"
+               Height="30" 
+               Content="Time cần thức dậy:"
+               Margin="50,195,612,244"
+               Background="#FFC7E4EE"
+               Foreground="Red"
+               FontWeight="Bold"/>
+
+        <Label x:Name="min_lb"
+               Height="30" 
+               Content="(Minutes)"
+               Margin="424,65,348,424"/>
+        <Label x:Name="as_lb"
+               Height="30" 
+               Content="(HH:MM)"
+               Margin="424,137,348,352"/>
+        <Label x:Name="aw_lb"
+               Height="30" 
+               Content="(HH:MM)"
+               Margin="424,220,348,269"/>
+
+        <TextBox x:Name="AsleepTime_tbx"
+                 Height="30" 
+                 Margin="256,137,439,352"
+                 Background="LightYellow"/>
+        <TextBox x:Name="AwakeTime_tbx"
+                 Height="30" 
+                 Margin="256,220,439,269"
+                 Background="LightYellow"/>
+        <TextBox x:Name="IntoSleep_tbx"
+                 Height="30" 
+                 Margin="256,65,439,424"
+                 Background="LightYellow"/>
+
+        <Button x:Name="AwakeTime_btn" 
+                Content="Awake Time"
+                Margin="494,123,243,352" 
+                Background="LightGreen"
+                Click="AwakeTime_btn_Click"/>
+        <Button x:Name="AsleepTime_btn"
+                Content="Asleep Time"
+                Margin="494,204,243,269" 
+                Background="LightYellow"
+                Click="AsleepTime_btn_Click"/>
+        <Button x:Name="Exit_btn"
+                Content="Exit"
+                Margin="355,460,374,23"
+                Background="LightCoral"
+                Click="Exit_btn_Click"/>
+
+        <TextBlock x:Name="Notification1"
+                   Height="150"
+                   Width="300" 
+                   Background="AliceBlue"
+                   Margin="50,245,442,74"
+                   Foreground="#FF8619D1"
+                   FontWeight="Bold"/>
+        <TextBlock x:Name="Notification2"
+                   Height="150"
+                   Width="300" 
+                   Background="AliceBlue"
+                   Margin="435,245,57,74"
+                   Foreground="#FF8619D1"
+                   FontWeight="Bold"/>
+
+        <Image x:Name="Image"
+               Height="200"
+               Width="200" 
+               Margin="632,50,10,269"
+               Source="D:\WPF\SleepTime\SleepTime\timer.jpg"/>
+
+    </Grid>
+</Window>
